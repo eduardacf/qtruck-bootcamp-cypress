@@ -5,8 +5,6 @@ describe('Login', () => {
       instagram: '@dudacfer_',
       password: 'pwd123'
     }
-    cy.wait(7000)
-
     cy.login(user)
     cy.loggedUser(user.name)
   })
@@ -21,7 +19,7 @@ describe('Login', () => {
     cy.modalHaveText('Credenciais inválidas, tente novamente!')
   })
 
-  it('nao deve logar instagram inexistente', () => {
+  it('nao deve logar com instagram inexistente', () => {
     const user = {
       instagram: '@rockspapito',
       password: '123456'
