@@ -19,7 +19,6 @@ Na pasta do projeto abra o terminal ou no VSCode use o Ctrl + ' (aspas simples),
 ```
 yarn install
 yarn add cypress@10.4.0 --save --dev
-
 ```
 
 
