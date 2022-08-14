@@ -43,7 +43,7 @@ yarn dev
 
 - **Iniciar o Cypress no navegador:**
 ```
- npx cypress open
+npx cypress open
 ```
 
 - **Para executar em modo headless:**
