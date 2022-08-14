@@ -1,4 +1,5 @@
 <center>
+
 ![Logo](https://raw.githubusercontent.com/eduardacf/qtruck-bootcamp-cypress/master/img/logo.png)
 
  <h5>Sistema de recomendação de alimentação conforme localização.</h5>
