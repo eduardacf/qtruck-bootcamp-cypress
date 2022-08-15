@@ -6,22 +6,22 @@
 
 </center>
 
-## Tecnologias
+## 💡Tecnologias Utilizadas
 - Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 	- Node.js (acima da versão v14.19.1)
 	- Cypress
 	- MongoDB
 	
-Cenários implementados no projeto
-Deve logar com sucesso
-Não deve logar com senha inválida
-Não deve logar com instagram inexistente
-Campo instagram na tela de login deve ser obrigátorio
-Campo senha na tela de login deve ser obrigatório
-Todos os campos na tela de login devem ser obrigatórios
+##📰 Cenários implementados no projeto
+- Deve logar com sucesso
+- Não deve logar com senha inválida
+- Não deve logar com instagram inexistente
+- Campo instagram na tela de login deve ser obrigátorio
+- Campo senha na tela de login deve ser obrigatório
+- Todos os campos na tela de login devem ser obrigatórios
 
-## Instalação do yarn e instalação do Cypress
+##🔍 Instalação do yarn e instalação do Cypress
 Na pasta do projeto abra o terminal ou no VSCode use o Ctrl + ' (aspas simples), e digite os comandos abaixo:
 
 ```
@@ -30,7 +30,7 @@ yarn add cypress@10.4.0 --save --dev
 ```
 
 
-## ☕Executando qtrucks
+## ☕ Executando o projeto
 
 #### Backend
 - **Acessar a pasta backend dentro do projeto e digitar os comandos:**
@@ -47,7 +47,8 @@ cd frontend/
 yarn dev
 ```
 
-## Comandos para iniciar o Cypress ⚙️
+## ⚙️ Executando testes com Cypress 
+- **Acessar a pasta tests dentro do projeto.**
 
 - **Iniciar o Cypress no navegador:**
 ```
