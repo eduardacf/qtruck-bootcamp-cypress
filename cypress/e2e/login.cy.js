@@ -49,7 +49,7 @@ describe('Login', () => {
     cy.modalHaveText('Por favor, informe a sua senha secreta!');
   });
 
-  it('todos os campos são obrigatórios', () => {
+  it('todos os campos devem ser obrigatórios', () => {
     cy.visitPage();
     cy.btnEntrar();
     cy.modalHaveText('Por favor, informe suas credenciais!');
