@@ -13,7 +13,7 @@
 	- Cypress
 	- MongoDB
 	
-##📰 Cenários implementados no projeto
+## 📰Cenários implementados no projeto
 - Deve logar com sucesso
 - Não deve logar com senha inválida
 - Não deve logar com instagram inexistente
@@ -21,7 +21,7 @@
 - Campo senha na tela de login deve ser obrigatório
 - Todos os campos na tela de login devem ser obrigatórios
 
-##🔍 Instalação do yarn e instalação do Cypress
+## 🔍Instalação do yarn e instalação do Cypress
 Na pasta do projeto abra o terminal ou no VSCode use o Ctrl + ' (aspas simples), e digite os comandos abaixo:
 
 ```
