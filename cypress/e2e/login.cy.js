@@ -1,3 +1,5 @@
+import loginPage from '../support/pages/Login'
+import mapPage from '../support/pages/Map'
 describe('Login', () => {
   it('deve logar com sucesso', () => {
     const user = {
@@ -5,8 +7,11 @@ describe('Login', () => {
       instagram: '@dudacfer_',
       password: 'pwd123',
     };
-    cy.login(user);
-    cy.loggedUser(user.name);
+    loginPage.go()
+    loginPage.form(user)
+    loginPage.submit()
+
+    mapPage.loggedUser(user.name)
   });
 
   it('nao deve logar com senha invalida', () => {
@@ -14,9 +19,11 @@ describe('Login', () => {
       instagram: '@papitorocks',
       password: '123456',
     };
+    loginPage.go()
+    loginPage.form(user)
+    loginPage.submit()
+    loginPage.modal.haveText('Credenciais inválidas, tente novamente!')
 
-    cy.login(user);
-    cy.modalHaveText('Credenciais inválidas, tente novamente!');
   });
 
   it('nao deve logar com instagram inexistente', () => {
@@ -25,33 +32,36 @@ describe('Login', () => {
       password: '123456',
     };
 
-    cy.login(user);
-    cy.modalHaveText('Credenciais inválidas, tente novamente!');
+    loginPage.go()
+    loginPage.form(user)
+    loginPage.submit()
+    loginPage.modal.haveText('Credenciais inválidas, tente novamente!')
+
   });
 
   it('instagram deve ser obrigatório', () => {
     const user = {
       password: '123456',
     };
-    cy.visitPage();
-    cy.loginInputPassword(user);
-    cy.btnEntrar();
-    cy.modalHaveText('Por favor, informe o seu código do Instagram!');
+    loginPage.go()
+    loginPage.form(user)
+    loginPage.submit()
+    loginPage.modal.haveText('Por favor, informe o seu código do Instagram!')
   });
 
   it('senha deve ser obrigatória', () => {
     const user = {
       instagram: '@rockspapito',
     };
-    cy.visitPage();
-    cy.loginInputName(user);
-    cy.btnEntrar();
-    cy.modalHaveText('Por favor, informe a sua senha secreta!');
+    loginPage.go()
+    loginPage.form(user)
+    loginPage.submit()
+    loginPage.modal.haveText('Por favor, informe a sua senha secreta!')
   });
 
   it('todos os campos devem ser obrigatórios', () => {
-    cy.visitPage();
-    cy.btnEntrar();
-    cy.modalHaveText('Por favor, informe suas credenciais!');
+    loginPage.go()
+    loginPage.submit()
+    loginPage.modal.haveText('Por favor, informe suas credenciais!')
   });
 });

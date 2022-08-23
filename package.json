@@ -6,9 +6,8 @@
   "author": "Eduarda Ferreira",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^10.4.0"
-  },
-  "dependencies": {
-    "cypress-browser-permissions": "^1.1.0"
+    "cypress": "^10.6.0",
+    "cypress-browser-permissions": "^1.1.0",
+    "cypress-mongodb": "^4.1.1"
   }
 }
