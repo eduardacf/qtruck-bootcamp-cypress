@@ -2,33 +2,35 @@
 
 ![Logo](https://raw.githubusercontent.com/eduardacf/qtruck-bootcamp-cypress/master/tests/img/logo.png)
 
- <h5>Sistema de recomendação de alimentação conforme localização.</h5>
+# Sistema de Recomendação de Alimentação conforme Localização
 
-</center>
+Este projeto é um sistema de recomendação de alimentação baseado na localização do usuário. Ele foi desenvolvido utilizando Node.js, Cypress e MongoDB.
 
-## 💡Tecnologias Utilizadas
-- Esse projeto foi desenvolvido com as seguintes tecnologias:
+## 💡 Tecnologias Utilizadas
 
-	- Node.js (acima da versão v14.19.1)
-	- Cypress
-	- MongoDB
-	
-## 📰Cenários implementados no projeto
-- Deve logar com sucesso
-- Não deve logar com senha inválida
-- Não deve logar com instagram inexistente
-- Campo instagram na tela de login deve ser obrigátorio
-- Campo senha na tela de login deve ser obrigatório
-- Todos os campos na tela de login devem ser obrigatórios
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-## 🔍Instalação do yarn e instalação do Cypress
-Na pasta do projeto abra o terminal ou no VSCode use o Ctrl + ' (aspas simples), e digite os comandos abaixo:
+- **Node.js** (acima da versão v14.19.1)
+- **Cypress**
+- **MongoDB**
+
+## 📰 Cenários Implementados no Projeto
+
+- **Deve logar com sucesso**
+- **Não deve logar com senha inválida**
+- **Não deve logar com Instagram inexistente**
+- **Campo Instagram na tela de login deve ser obrigatório**
+- **Campo senha na tela de login deve ser obrigatório**
+- **Todos os campos na tela de login devem ser obrigatórios**
+
+## 🔍 Instalação do Yarn e Cypress
+
+Na pasta do projeto, abra o terminal ou no VSCode use o atalho `Ctrl + '` (aspas simples) e digite os comandos abaixo:
 
 ```
 yarn install
 yarn add cypress@10.4.0 --save --dev
 ```
-
 
 ## ☕ Executando o projeto
 
